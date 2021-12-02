@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	li	em     {font-weight: bold;
+		        color:maroon;
+		    	text-align: center;}
+	h3,  em	 		{font-family: sans-serif;
+					color:salmon;
+					text-decoration: underline;
+					background-color: lightpink;} 
+	li ul   {font-family:monospace;
+
+	}				       
+		ul		{font-family:monospace ;
+				font-size: 12pt;
+				color: darkblue;}
+	span{
+		color: blue;
+		border: 1px solid black;
+		background-color: skyblue;
+	}
+	.extra span{
+		color: inherit;
+		background-color: maroon;
+
+	}	
+
+	h4, em    {font-family:cursive;
+					text-decoration: line-through;
+					color: blue;
+	}
+	</style>
+	<title></title>
+</head>
+<body>
+<table border="1" style="width:100%">
+	
+       <thead>
+       	<td colspan="3" align="center"><h3>About--110306056</h3></td>
+       	</thead>
+       	<tr>
+         <td rowspan="3"><img src="cat.jpg" width="100" height="80">
+         	<br><li><em>personal photo</em></br>
+    	<td colspan="2">
+    		<form>Name:<input type="text" name="name" size="25" maxlength="50">
+    		<br>
+    		<form>Gender
+    			<input type="radio" name="gender" value="Male" >Male
+    			<input type="radio" name="gender" value="Female" ><span>Female</span>
+    			<input type="radio" name="gender" value="Other" >Other
+    		</br></td>
+    		<tr><td><li><ul>Country:</ul></li>
+    			<form action="/action_page.php">
+				<select name="Country">
+				<option value="Taipei">Taipei</option>
+				<option value="Tainan">Tainan</option>
+				<option value="Taichung">Taichung</option>
+				<option value="Taoyuan">Taoyuan</option>
+				</select>
+
+    		</td>
+    		<td><form><h4><em>Birthday:</em></h4>
+    			<input type="date" name="birthday">
+    		
+    			
+    		</td>
+    		<tr><td colspan="2">
+    			<ul>Email:</ul>
+    			<input type="text" name="email" size="25
+    			" maxlength="50">
+    		</td>
+    			
+    		</tr>
+    		<tr><td colspan="1" ><li><em>Hobby</em></li></td><td colspan="2">    		
+    			<form action="action_page.php" method="get">
+				<input type="checkbox" name="hobby" value="swimming"><h4><em>Swimming</em></h4>
+				<input type="checkbox" name="hobby" value="volleyball">Volleyball
+				<input type="checkbox" name="hobby" value="movie"><em>Movie</em>
+				<input type="checkbox" name="hobby" value="Game">Game
+				<input type="checkbox" name="hobby" value="Sleep">Sleep</td></tr>
+    		<tr><td >Skill</td>
+
+    			<td colspan="2">
+    			<form action="action_page.php" method="get">
+				<input type="checkbox" name="skill" value="Java"><span>Java</span>
+				<input type="checkbox" name="skill" value="HTML">HTML
+				<input type="checkbox" name="skill" value="Python"><li><em>Python</em></li>
+				<input type="checkbox" name="skill" value="Microsoft Office">Microsoft Office
+				<input type="checkbox" name="skill" value="Premiere">Premiere
+				</td></tr>
+    		<tr><td><em>Say Something</em></td>
+    			<td colspan="2">
+    				<input type="text" name="saysomething" size="50" maxlength="100" placeholder="Say something here.">
+    			</td></tr>
+    			<tr><td colspan="3">
+    				<input type="submit" value="Submit">
+    				<input type="reset" value="Clear">
+                </form>
+    			</tr></td>
+
+
+    	
+    </tr>
+</table>
+
+</body>
+</html>
